@@ -15,7 +15,7 @@ const generateData = (_level, _preKey, _tns) => {
   const children = [];
   for (let i = 0; i < x; i++) {
     const key = `${preKey}-${i}`;
-    tns.push({ title: key, key });
+    tns.push({ title: <div><p>Line 1</p><p>{key}</p></div>, key });
     if (i < y) {
       children.push(key);
     }
